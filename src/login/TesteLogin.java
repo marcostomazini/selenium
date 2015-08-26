@@ -28,7 +28,7 @@ public class TesteLogin {
         driver.findElement(By.cssSelector(".btn.btn-medium.btn-primary")).click();
 
         // Login
-        //Assert.assertEquals("Usu??rio ou senha incorretos", driver.findElement(By.cssSelector(".alert.alert-error")).getText());
+        //Assert.assertEquals("Usu??????rio ou senha incorretos", driver.findElement(By.cssSelector(".alert.alert-error")).getText());
 
         driver.findElement(By.partialLinkText("Movimenta")).click();
 
@@ -36,7 +36,7 @@ public class TesteLogin {
         driver.findElement(By.partialLinkText("Nova movimenta")).click();
 
         Select nome = new Select(driver.findElement(By.name("movimentacaotipo")));
-        nome.selectByVisibleText("Sa?da");
+        nome.selectByVisibleText("Saída");
 
         //driver.quit();
     }
