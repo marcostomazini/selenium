@@ -11,15 +11,19 @@ import org.testng.annotations.Test;
 public class TesteInterrogacao {
 
     @Test
-    public void teste() {
+    public void test() {
         WebDriver driver = new FirefoxDriver();
         driver.get("http://planned.by/quickloja");
 
         // localizacao usando fluent
         // localizacao dos elementos por id
-        driver.findElement(By.id("usuariologin"));
+        driver.findElement(By.id("usuariologin")).sendKeys("admin");
+
         // localizacao dos elementos por name
         driver.findElement(By.name("usuariosenha"));
+
+        // localizacao por selector
+        driver.findElement(By.cssSelector(".btn.btn-medium.btn-primary"));
 
         driver.quit();
     }

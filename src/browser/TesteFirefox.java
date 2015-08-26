@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
  */
 public class TesteFirefox {
     @Test
-    public void teste() {
+    public void test() {
         WebDriver driver = new FirefoxDriver();
         driver.get("http://planned.by/quickloja");
         driver.findElement(By.id("usuariologin"));
